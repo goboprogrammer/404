@@ -1,7 +1,5 @@
 import "./App.css";
 import React, { Component } from "react";
-import Image from 'react-bootstrap/Image';
-import background from './error.gif';
 
 class App extends Component {
   render() {
@@ -15,10 +13,8 @@ class App extends Component {
       backgroundRepeat: "no-repeat",
     };
     return (
-      <div>
-        <Image src={background} fluid />
-          <h1> geeksforgeeks </h1>
-        </Image>
+      <div style={myStyle}>
+        <h1> geeksforgeeks </h1>
       </div>
     );
   }
