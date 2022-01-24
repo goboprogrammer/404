@@ -1,24 +1,27 @@
-
-import React, { Component } from 'react';
-import './App.css';
+import "./App.css";
+import React, { Component } from "react";
+import Image from 'react-bootstrap/Image';
+import background from './error.gif';
 
 class App extends Component {
   render() {
-    const myStyle={
-        backgroundImage: 
- "url('https://media.geeksforgeeks.org/wp-content/uploads/rk.png')",
-        height:'100vh',
-        marginTop:'-70px',
-        fontSize:'50px',
-        backgroundSize: 'cover',
-        backgroundRepeat: 'no-repeat',
+    const myStyle = {
+      backgroundImage:
+        "url('https://wallpapercave.com/wp/wp7323796.gif')",
+      height: "100vh",
+      marginTop: "-70px",
+      fontSize: "50px",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
     };
     return (
-      <div style={myStyle}>
-        <h1> geeksforgeeks </h1>
+      <div>
+        <Image src={background} fluid />
+          <h1> geeksforgeeks </h1>
+        </Image>
       </div>
     );
   }
 }
-   
+
 export default App;
